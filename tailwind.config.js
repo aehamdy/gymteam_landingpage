@@ -9,12 +9,12 @@ module.exports = {
     extend: {
       colors: {
         'accent': 'rgb(214, 253, 82)',
-        'primary-bg': 'rgb(0, 0, 0)',
-        'secondary-bg': 'rgb(36, 36, 36)',
         'heading': 'rgb(245, 245, 245)',
         'highlight': 'rgb(221, 140, 121)',
         'primary-paragraph': '#242424',
         'secondary-paragraph': 'rgb(57, 57, 57)',
+        'primary-bg': 'rgb(0, 0, 0)',
+        'secondary-bg': 'rgb(36, 36, 36)',
         'toggle-bg': 'rgb(242, 201, 77)',
       },
     },

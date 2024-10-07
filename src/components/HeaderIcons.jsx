@@ -1,11 +1,17 @@
-import { Menu, Message, SearchIcon } from "./header-icons/Icons";
+/* eslint-disable react/prop-types */
+import { CloseIcon, Menu, Message, SearchIcon } from "./header-icons/Icons";
 
-function HeaderIcons() {
+function HeaderIcons({ setIsExpanded, isExpanded }) {
+  const toggleNavbar = () => {
+    setIsExpanded((prevValue) => !prevValue);
+  };
   return (
     <div className="flex gap-6">
       <SearchIcon />
       <Message />
-      <Menu />
+      <button onClick={toggleNavbar}>
+        {isExpanded ? <CloseIcon /> : <Menu />}
+      </button>
     </div>
   );
 }

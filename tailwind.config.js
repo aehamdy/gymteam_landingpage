@@ -20,6 +20,16 @@ module.exports = {
       },
       transitionDuration: {
         'short': '200ms',
+      },
+      keyframes: {
+        fadeInDown: {
+          '0%': { opacity: '0', transform: 'translateY(-50px)' },
+          '15%': { opacity: '0' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        }
+      },
+      animation: {
+        'fadeInDown': 'fadeInDown 0.25s ease-out forwards',
       }
     },
   },

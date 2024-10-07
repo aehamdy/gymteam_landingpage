@@ -18,6 +18,9 @@ module.exports = {
         'secondary-bg': 'rgb(36, 36, 36)',
         'toggle-bg': 'rgb(242, 201, 77)',
       },
+      transitionDuration: {
+        'short': '200ms',
+      }
     },
   },
   plugins: [],

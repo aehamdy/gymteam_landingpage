@@ -10,6 +10,6 @@ export function Message() {
 
 export function Menu() {
   return (
-    <MenuIcon className="hover:text-white duration-short cursor-pointer" />
+    <MenuIcon className="md:hidden hover:text-white duration-short cursor-pointer" />
   );
 }

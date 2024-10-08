@@ -1,4 +1,5 @@
 import { features } from "../constants";
+import SecondaryButton from "./SecondaryButton";
 
 function Features() {
   return (
@@ -15,6 +16,16 @@ function Features() {
           <p className="text-secondary-paragraph group-hover:text-primary-paragraph tracking-wide duration-short">
             {feature.text}
           </p>
+          <div className="w-full flex justify-between">
+            <SecondaryButton
+              text="learn more"
+              color="text-white"
+              hover="text-black"
+            />
+            <span className="p-1 font-light text-black group-hover:text-accent bg-accent group-hover:bg-black rounded-full duration-short">
+              {feature.icon}
+            </span>
+          </div>
         </aritcle>
       ))}
     </section>

@@ -1,10 +1,15 @@
+/* eslint-disable react/prop-types */
 import { ArrowUpRight } from "lucide-react";
 
-function SecondaryButton() {
+function SecondaryButton({ text, color, hover }) {
   return (
-    <button className="flex gap-1 font-semibold uppercase hover:text-white duration-short">
-      <a href="#">learn more</a>
-      <ArrowUpRight />
+    <button
+      className={`group font-semibold uppercase ${color} hover:${hover} duration-short`}
+    >
+      <a href="#" className={`flex gap-1 group-hover:${hover} duration-short`}>
+        {text.toUpperCase()}
+        <ArrowUpRight />
+      </a>
     </button>
   );
 }

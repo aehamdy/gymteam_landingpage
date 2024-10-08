@@ -15,7 +15,7 @@ function HeroSection() {
         </p>
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 mx-auto">
           <PrimaryButton text="start now" />
-          <SecondaryButton />
+          <SecondaryButton text="learn more" hover="text-white" />
         </div>
       </div>
       <div className="absolute bottom-0 w-full">

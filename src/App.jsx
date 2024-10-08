@@ -6,8 +6,8 @@ function App() {
   return (
     <>
       <Header />
-      <div className="max-w-7xl mx-auto">
-        <HeroSection />
+      <HeroSection />
+      <div className="max-w-5xl mx-auto">
         <Features />
       </div>
     </>

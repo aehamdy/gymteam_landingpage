@@ -1,6 +1,6 @@
-import { ArrowUpRight } from "./header-icons/Icons";
 import PrimaryButton from "./PrimaryButton";
 import HorizontalTextScroll from "./HorizontalTextScroll";
+import SecondaryButton from "./SecondaryButton";
 
 function HeroSection() {
   return (
@@ -15,10 +15,7 @@ function HeroSection() {
         </p>
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 mx-auto">
           <PrimaryButton text="start now" />
-          <button className="flex gap-1 font-semibold uppercase hover:text-white duration-short">
-            <a href="#">learn more</a>
-            <ArrowUpRight />
-          </button>
+          <SecondaryButton />
         </div>
       </div>
       <div className="absolute bottom-0 w-full">

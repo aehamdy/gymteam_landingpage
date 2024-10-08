@@ -9,7 +9,6 @@ module.exports = {
 
     extend: {
       fontFamily: {
-        'teko': ['Teko', 'sans-serif'],
         'orbitron': ['Orbitron', 'sans-serif'],
       },
       colors: {

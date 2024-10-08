@@ -7,6 +7,9 @@ module.exports = {
   theme: {
 
     extend: {
+      fontFamily: {
+        'Teko': ['Teko', 'sans-serif'],
+      },
       colors: {
         'accent': 'rgb(214, 253, 82)',
         'heading': 'rgb(245, 245, 245)',

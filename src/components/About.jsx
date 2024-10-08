@@ -1,6 +1,12 @@
 import about from "../assets/about.jpg";
-import { aboutImages, aboutTexts } from "../constants";
+import { aboutImages } from "../constants";
 import SectionHeading from "./SectionHeading";
+
+const texts = {
+  highlighted: "Lorem ipsum",
+  heading: "dolor sit amet",
+  text: "Lorem ipsum dolor sit amet consectetur. Sit proin a ultrices sit. Pharetra enim sed",
+};
 
 function About() {
   return (
@@ -44,15 +50,17 @@ function About() {
             ))}
           </div>
           <div className="flex gap-3">
-            {aboutTexts.map((item, i) => (
-              <div key={i} className="flex flex-col gap-3">
-                <h4 className="font-bold text-xl tracking-wider">
-                  <span className="text-red-400">{item.highlighted} </span>
-                  {item.heading}
-                </h4>
-                <p className="text-secondary-paragraph">{item.text}</p>
-              </div>
-            ))}
+            {Array(2)
+              .fill(texts)
+              .map((item, i) => (
+                <div key={i} className="flex flex-col gap-3">
+                  <h4 className="font-bold text-xl tracking-wider">
+                    <span className="text-red-400">{item.highlighted} </span>
+                    {item.heading}
+                  </h4>
+                  <p className="text-secondary-paragraph">{item.text}</p>
+                </div>
+              ))}
           </div>
         </div>
       </div>

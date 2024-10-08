@@ -35,15 +35,3 @@ export const features = [
 ];
 
 export const aboutImages = [{ img: about1 }, { img: about2 }];
-export const aboutTexts = [
-  {
-    highlighted: "Lorem ipsum",
-    heading: "dolor sit amet",
-    text: "Lorem ipsum dolor sit amet consectetur. Sit proin a ultrices sit. Pharetra enim sed",
-  },
-  {
-    highlighted: "Lorem ipsum",
-    heading: "dolor sit amet",
-    text: "Lorem ipsum dolor sit amet consectetur. Sit proin a ultrices sit. Pharetra enim sed",
-  },
-];

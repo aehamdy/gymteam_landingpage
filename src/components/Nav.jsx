@@ -18,7 +18,7 @@ function Nav({ isExpanded }) {
         ))}
       </ul>
       {isExpanded && (
-        <ul className="lg:hidden flex flex-col absolute top-[100%] text-secondary-paragraph bg-[#141414] w-full rounded-lg text-center animate-fadeInDown">
+        <ul className="lg:hidden flex flex-col absolute left-0 top-[100%] text-secondary-paragraph bg-[#141414] w-full rounded-lg text-center animate-fadeInDown">
           {navItems.map((item, i) => (
             <li
               key={i}

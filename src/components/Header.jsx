@@ -6,7 +6,7 @@ import Nav from "./Nav";
 function Header() {
   const [isExpanded, setIsExpanded] = useState(false);
   return (
-    <header className="relative flex justify-between items-center py-6">
+    <header className="absolute w-full top-0 z-50 py-3 px-12 backdrop-blur-lg flex justify-between items-center">
       <Logo />
       <Nav isExpanded={isExpanded} />
       <HeaderIcons setIsExpanded={setIsExpanded} isExpanded={isExpanded} />

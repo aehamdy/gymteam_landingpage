@@ -62,3 +62,32 @@ export const coaches = [
     type: "Corssfit Coach",
   },
 ];
+
+export const plans = [
+  {
+    type: "crossfit",
+    price: "120",
+    currency: "$",
+    monthly: "/mo",
+    yearly: "/anually",
+    features: [
+      "Lorem Ipsum is simply dummy text",
+      "Contrary to popular ballof. Lorem Ipsum is",
+      "Contrary to popular ballof. Lorem Ipsum",
+      "Lorem Ipsum is simply dummy text",
+    ],
+  },
+  {
+    type: "open gym",
+    price: "109",
+    currency: "$",
+    monthly: "/mo",
+    yearly: "/anually",
+    features: [
+      "Lorem Ipsum is simply dummy text",
+      "Contrary to popular ballof. Lorem Ipsum is",
+      "Contrary to popular ballof. Lorem Ipsum",
+      "Lorem Ipsum is simply dummy text",
+    ],
+  },
+];

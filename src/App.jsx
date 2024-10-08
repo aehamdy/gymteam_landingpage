@@ -4,6 +4,7 @@ import Coaches from "./components/Coaches";
 import Features from "./components/Features";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
+import Plans from "./components/Plans";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <About />
         <Coaches />
         <BackgroundSection />
+        <Plans />
       </div>
     </>
   );

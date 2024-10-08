@@ -1,4 +1,4 @@
-import { Mail, MenuIcon, Search, X } from "lucide-react";
+import { ArrowUpRightIcon, Mail, MenuIcon, Search, X } from "lucide-react";
 
 export function SearchIcon() {
   return <Search className="hover:text-white duration-short cursor-pointer" />;
@@ -16,4 +16,8 @@ export function Menu() {
 
 export function CloseIcon() {
   return <X className="lg:hidden cursor-pointer" />;
+}
+
+export function ArrowUpRight() {
+  return <ArrowUpRightIcon />;
 }

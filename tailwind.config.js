@@ -8,7 +8,8 @@ module.exports = {
 
     extend: {
       fontFamily: {
-        'Teko': ['Teko', 'sans-serif'],
+        'teko': ['Teko', 'sans-serif'],
+        'orbitron': ['Orbitron', 'sans-serif'],
       },
       colors: {
         'accent': 'rgb(214, 253, 82)',

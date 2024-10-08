@@ -1,4 +1,5 @@
 import { ArrowUpRight } from "./header-icons/Icons";
+import ScrollHorizontalText from "./ScrollHorizontalText";
 import PrimaryButton from "./PrimaryButton";
 
 function HeroSection() {
@@ -20,6 +21,7 @@ function HeroSection() {
           </button>
         </div>
       </div>
+      <ScrollHorizontalText />
     </section>
   );
 }

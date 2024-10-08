@@ -6,7 +6,7 @@ function Features() {
   return (
     <section className="py-section-spacing px-4">
       <SectionHeading text="Why choose us" />
-      <div className="py-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div className="mb-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         {features.map((feature, i) => (
           <aritcle
             key={i}

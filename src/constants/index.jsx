@@ -3,6 +3,8 @@ import { Zap } from "lucide-react";
 import feature1 from "../assets/features-1.png";
 import feature2 from "../assets/features-2.png";
 import feature3 from "../assets/features-3.png";
+import about1 from "../assets/about-1.jpg";
+import about2 from "../assets/about-2.jpg";
 
 export const navItems = [
   { label: "Home", href: "#" },
@@ -29,5 +31,19 @@ export const features = [
     heading: "muscles building",
     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum at ut ad.",
     icon: <Zap />,
+  },
+];
+
+export const aboutImages = [{ img: about1 }, { img: about2 }];
+export const aboutTexts = [
+  {
+    highlighted: "Lorem ipsum",
+    heading: "dolor sit amet",
+    text: "Lorem ipsum dolor sit amet consectetur. Sit proin a ultrices sit. Pharetra enim sed",
+  },
+  {
+    highlighted: "Lorem ipsum",
+    heading: "dolor sit amet",
+    text: "Lorem ipsum dolor sit amet consectetur. Sit proin a ultrices sit. Pharetra enim sed",
   },
 ];

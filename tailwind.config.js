@@ -8,6 +8,9 @@ module.exports = {
   theme: {
 
     extend: {
+      spacing: {
+        'section-spacing': '3rem',
+      },
       fontFamily: {
         'orbitron': ['Orbitron', 'sans-serif'],
       },

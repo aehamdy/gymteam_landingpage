@@ -7,7 +7,7 @@ function App() {
     <>
       <Header />
       <HeroSection />
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-4xl mx-auto">
         <Features />
       </div>
     </>

@@ -1,4 +1,5 @@
 import About from "./components/About";
+import Coaches from "./components/Coaches";
 import Features from "./components/Features";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
@@ -11,6 +12,7 @@ function App() {
       <div className="max-w-4xl mx-auto">
         <Features />
         <About />
+        <Coaches />
       </div>
     </>
   );

@@ -1,3 +1,4 @@
+import Features from "./components/Features";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 
@@ -7,6 +8,7 @@ function App() {
       <Header />
       <div className="max-w-7xl mx-auto">
         <HeroSection />
+        <Features />
       </div>
     </>
   );

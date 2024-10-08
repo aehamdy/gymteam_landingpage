@@ -12,16 +12,16 @@ export const features = [
   {
     img: feature1,
     heading: "muscles building",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum asperiores molestiae at ut, ad itaque, soluta aut possimus veritatis impedit quod nesciunt ullam obcaecati, dolores sapiente provident nostrum numquam deserunt.",
+    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum at ut ad.",
   },
   {
     img: feature2,
     heading: "muscles building",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum asperiores molestiae at ut, ad itaque, soluta aut possimus veritatis impedit quod nesciunt ullam obcaecati, dolores sapiente provident nostrum numquam deserunt.",
+    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum at ut ad.",
   },
   {
     img: feature3,
     heading: "muscles building",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum asperiores molestiae at ut, ad itaque, soluta aut possimus veritatis impedit quod nesciunt ullam obcaecati, dolores sapiente provident nostrum numquam deserunt.",
+    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum at ut ad.",
   },
 ];

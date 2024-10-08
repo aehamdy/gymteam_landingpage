@@ -9,7 +9,7 @@ function HeaderIcons({ setIsExpanded, isExpanded }) {
     <div className="flex gap-6">
       <SearchIcon />
       <Message />
-      <button onClick={toggleNavbar}>
+      <button onClick={toggleNavbar} className="lg:hidden">
         {isExpanded ? <CloseIcon /> : <Menu />}
       </button>
     </div>

@@ -12,11 +12,15 @@ module.exports = {
         'heading': 'rgb(245, 245, 245)',
         'highlight': 'rgb(221, 140, 121)',
         'primary-paragraph': '#242424',
-        'secondary-paragraph': 'rgb(207, 207, 207)',
+        'secondary-paragraph': 'rgb(165, 165, 165)',
+        // 'secondary-paragraph': 'rgb(207, 207, 207)',
         // 'secondary-paragraph': 'rgb(57, 57, 57)',
         'primary-bg': 'rgb(0, 0, 0)',
         'secondary-bg': 'rgb(36, 36, 36)',
         'toggle-bg': 'rgb(242, 201, 77)',
+      },
+      boxShadow: {
+        'button-shadow': '0 0 20px 2px rgba(214, 253, 0.3)',
       },
       transitionDuration: {
         'short': '200ms',

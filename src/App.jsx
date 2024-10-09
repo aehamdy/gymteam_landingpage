@@ -5,6 +5,7 @@ import Coaches from "./components/Coaches";
 import Features from "./components/Features";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
+import NewsLetter from "./components/NewsLetter";
 import Plans from "./components/Plans";
 import Reviews from "./components/Reviews";
 
@@ -21,6 +22,7 @@ function App() {
         <Plans />
         <Reviews />
         <Blog />
+        <NewsLetter />
       </div>
     </>
   );

@@ -4,6 +4,7 @@ import Blog from "./components/Blog";
 import Coaches from "./components/Coaches";
 import Features from "./components/Features";
 import Footer from "./components/Footer";
+import FooterBottomBar from "./components/FooterBottomBar";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import NewsLetter from "./components/NewsLetter";
@@ -25,6 +26,7 @@ function App() {
         <Blog />
         <NewsLetter />
         <Footer />
+        <FooterBottomBar />
       </div>
     </>
   );

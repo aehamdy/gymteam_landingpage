@@ -1,6 +1,7 @@
 import { CircleCheck } from "lucide-react";
 import { plans } from "../constants";
 import SectionHeading from "./SectionHeading";
+import PrimaryButton from "./PrimaryButton";
 
 function Plans() {
   return (
@@ -66,6 +67,7 @@ function Plans() {
                   </div>
                 ))}
               </ul>
+              <PrimaryButton text="purchase now" />
             </article>
           ))}
         </div>

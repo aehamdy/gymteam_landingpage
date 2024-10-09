@@ -9,6 +9,7 @@ import coach1 from "../assets/coach-1.jpg";
 import coach2 from "../assets/coach-2.jpg";
 import coach3 from "../assets/coach-3.jpg";
 import coach4 from "../assets/coach-4.jpg";
+import reviewPerson from "../assets/review-person.png";
 
 export const navItems = [
   { label: "Home", href: "#" },
@@ -89,5 +90,14 @@ export const plans = [
       "Contrary to popular ballof. Lorem Ipsum",
       "Lorem Ipsum is simply dummy text",
     ],
+  },
+];
+
+export const reviews = [
+  {
+    text: "lorem ipsum is simply dummy text of the printing and typsetting industry",
+    name: "albert flores",
+    profession: "Profi coach",
+    img: reviewPerson,
   },
 ];

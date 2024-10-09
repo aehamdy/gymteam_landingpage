@@ -5,6 +5,7 @@ import Features from "./components/Features";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import Plans from "./components/Plans";
+import Reviews from "./components/Reviews";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Coaches />
         <BackgroundSection />
         <Plans />
+        <Reviews />
       </div>
     </>
   );

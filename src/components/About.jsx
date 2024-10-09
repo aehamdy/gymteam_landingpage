@@ -20,18 +20,18 @@ function About() {
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="flex justify-between items-center gap-4 w-full">
-          <p className="w-[80%]">
+        <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-4 w-full">
+          <p className="w-full md:w-[80%]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
             expedita quisquam quibusdam unde, amet quidem mollitia iusto nulla
             eaque ab quae ullam corrupti ut veniam neque enim odio vero debitis.
             Laboriosam, fugiat voluptas ad sint dolorum.
           </p>
-          <span className="font-orbitron font-extrabold uppercase text-center text-primary-paragraph bg-accent rounded-lg py-2 px-6">
+          <span className="inline-flex self-start font-orbitron font-extrabold uppercase text-center text-primary-paragraph bg-accent rounded-lg py-2 px-6">
             10 years
           </span>
         </div>
-        <div className="flex gap-6">
+        <div className="flex flex-col md:flex-row gap-6">
           <div className="flex gap-2">
             {aboutImages.map((image, i) => (
               <div
@@ -49,7 +49,7 @@ function About() {
               </div>
             ))}
           </div>
-          <div className="flex gap-3">
+          <div className="flex flex-col md:flex-row gap-3">
             {Array(2)
               .fill(texts)
               .map((item, i) => (

@@ -3,7 +3,7 @@ import { reviews } from "../constants";
 
 function Reviews() {
   return (
-    <section className="flex justify-end md:justify-start items-end w-full h-[450px] py-4 px-5 bg-[url('./assets/reviews.jpg')] bg-cover bg-center bg-no-repeat">
+    <section className="flex justify-end md:justify-start items-end w-full h-[450px] my-section-spacing py-4 px-5 bg-[url('./assets/reviews.jpg')] bg-cover bg-bottom bg-no-repeat">
       <div className="w-full md:w-2/3 py-4 px-2 rounded-xl bg-accent">
         {reviews.map((review, i) => (
           <article

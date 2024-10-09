@@ -120,3 +120,22 @@ export const blogs = [
     text: "Lorem Ipsum is simply dummy text of the printing and typsetting industry",
   },
 ];
+
+export const footerMenus = [
+  {
+    heading: "About",
+    list: ["About us", "Blog", "Contact", "Vacancy"],
+  },
+  {
+    heading: "Services",
+    list: ["How to work", "Works", "Price"],
+  },
+  {
+    heading: "Support",
+    list: ["Contact us", "Our channel", "Instagram", "Telegram"],
+  },
+  {
+    heading: "FAQ",
+    list: ["Payment", "Monthly pay", "Work time", "More"],
+  },
+];

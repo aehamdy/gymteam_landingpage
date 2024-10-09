@@ -9,6 +9,9 @@ import coach1 from "../assets/coach-1.jpg";
 import coach2 from "../assets/coach-2.jpg";
 import coach3 from "../assets/coach-3.jpg";
 import coach4 from "../assets/coach-4.jpg";
+// import blog1 from "../assets/blog-1.jpg";
+// import blog2 from "../assets/blog-2.jpg";
+// import blog3 from "../assets/blog-3.jpg";
 
 export const navItems = [
   { label: "Home", href: "#" },
@@ -97,5 +100,23 @@ export const reviews = [
     text: "lorem ipsum is simply dummy text of the printing and typsetting industry",
     name: "albert flores",
     profession: "Profi coach",
+  },
+];
+
+export const blogs = [
+  {
+    // img: blog1,
+    buttonText: "new zone",
+    text: "Lorem Ipsum is simply dummy text of the printing and typsetting industry",
+  },
+  {
+    // img: blog2,
+    buttonText: "personal",
+    text: "Lorem Ipsum is simply dummy text of the printing and typsetting industry",
+  },
+  {
+    // img: blog3,
+    buttonText: "personal",
+    text: "Lorem Ipsum is simply dummy text of the printing and typsetting industry",
   },
 ];

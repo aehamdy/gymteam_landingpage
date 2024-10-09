@@ -1,5 +1,6 @@
 import About from "./components/About";
 import BackgroundSection from "./components/BackgroundSection";
+import Blog from "./components/Blog";
 import Coaches from "./components/Coaches";
 import Features from "./components/Features";
 import Header from "./components/Header";
@@ -19,6 +20,7 @@ function App() {
         <BackgroundSection />
         <Plans />
         <Reviews />
+        <Blog />
       </div>
     </>
   );

@@ -16,18 +16,18 @@ function App() {
     <>
       <Header />
       <HeroSection />
-      <div className="max-w-4xl mx-auto">
-        <Features />
-        <About />
-        <Coaches />
-        <BackgroundSection />
-        <Plans />
-        <Reviews />
-        <Blog />
-        <NewsLetter />
-        <Footer />
-        <FooterBottomBar />
-      </div>
+      {/* <div className="max-w-4xl mx-auto"> */}
+      <Features />
+      <About />
+      <Coaches />
+      <BackgroundSection />
+      <Plans />
+      <Reviews />
+      <Blog />
+      <NewsLetter />
+      <Footer />
+      <FooterBottomBar />
+      {/* </div> */}
     </>
   );
 }

@@ -10,7 +10,9 @@ module.exports = {
     extend: {
       spacing: {
         'section-spacing': '3rem',
-        'section-horizontal-padding': '10rem',
+        'section-horizontal-padding-sm': '3rem',
+        'section-horizontal-padding-md': '6rem',
+        'section-horizontal-padding-lg': '10rem',
       },
       fontFamily: {
         'orbitron': ['Orbitron', 'sans-serif'],

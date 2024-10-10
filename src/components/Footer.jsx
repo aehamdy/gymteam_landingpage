@@ -60,38 +60,39 @@ const icons = [facebookIcon, linkedinIcon, instagramIcon];
 
 function Footer() {
   return (
-    <footer className="flex flex-col gap-10 py-section-spacing px-3">
-      <div className="flex flex-col gap-8 w-fit">
-        <Logo />
-        <p className="w-3/4 text-secondary-paragraph lg:w-3/4">
-          Lorem Ipsum is simply dummy text for the printing and typsetting
-          industry
-        </p>
-        <div className="flex gap-3">
-          {icons.map((icon, i) => (
-            <a
-              key={i}
-              href="#"
-              className="p-2 border border-accent rounded-full"
-            >
-              {icon}
-            </a>
+    <footer className=" py-section-spacing px-3">
+      <div className="flex flex-col md:flex-row justify-between gap-8 px-section-horizontal-padding">
+        <div className="flex flex-col gap-8 md:w-1/3">
+          <Logo />
+          <p className="md:w-3/4 text-secondary-paragraph">
+            Lorem Ipsum is simply dummy text for the printing and typsetting
+          </p>
+          <div className="flex gap-3">
+            {icons.map((icon, i) => (
+              <a
+                key={i}
+                href="#"
+                className="p-2 border border-accent rounded-full"
+              >
+                {icon}
+              </a>
+            ))}
+          </div>
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-16">
+          {footerMenus.map((menu, i) => (
+            <div key={i} className="">
+              <h3 className="text-xl text-accent mb-3">{menu.heading}</h3>
+              <ul className="flex flex-col gap-3">
+                {menu.list.map((item, i) => (
+                  <li key={i} className="w-fit text-lg hover:text-white">
+                    <a href="#">{item}</a>
+                  </li>
+                ))}
+              </ul>
+            </div>
           ))}
         </div>
-      </div>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-        {footerMenus.map((menu, i) => (
-          <div key={i} className="">
-            <h3 className="text-xl text-accent mb-3">{menu.heading}</h3>
-            <ul className="flex flex-col gap-3">
-              {menu.list.map((item, i) => (
-                <li key={i} className="w-fit text-lg hover:text-white">
-                  <a href="#">{item}</a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
       </div>
     </footer>
   );

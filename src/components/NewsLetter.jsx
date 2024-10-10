@@ -7,7 +7,7 @@ function NewsLetter() {
       className="relative w-full h-[500px] py-section-spacing bg-cover bg-center bg-no-repeat before:absolute before:content[''] before:top-0 before:start-0 before:w-full before:h-full before:bg-black/[0.7]"
       style={{ backgroundImage: `url(${newsLetterImg})` }}
     >
-      <div className="absolute flex flex-col justify-center items-center gap-8 w-full h-full mx-auto">
+      <div className="px-section-horizontal-padding absolute flex flex-col justify-center items-center gap-8 w-full h-full mx-auto">
         <div className="mx-auto w-fit text-center">
           <SectionHeading text="get your first trial visit" />
           <p className="mb-4 text-secondary-paragraph">

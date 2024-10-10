@@ -1,8 +1,12 @@
+import newsLetterImg from "../assets/news-letter.jpg";
 import SectionHeading from "./SectionHeading";
 
 function NewsLetter() {
   return (
-    <section className="flex flex-col justify-center items-center gap-8 w-full h-[500px] py-section-spacing px-4 bg-[url('./assets/news-letter.jpg')] bg-cover bg-center bg-no-repeat">
+    <section
+      className="flex flex-col justify-center items-center gap-8 w-full h-[500px] py-section-spacing px-4 bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: `url(${newsLetterImg})` }}
+    >
       <div className="mx-auto w-fit text-center">
         <SectionHeading text="get your first trial visit" />
         <p className="mb-4 text-secondary-paragraph">

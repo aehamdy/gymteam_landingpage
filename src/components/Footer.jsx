@@ -60,7 +60,7 @@ const icons = [facebookIcon, linkedinIcon, instagramIcon];
 
 function Footer() {
   return (
-    <footer className=" py-section-spacing px-3">
+    <footer className="py-section-spacing">
       <div className="flex flex-col md:flex-row justify-between gap-8 px-section-horizontal-padding">
         <div className="flex flex-col gap-8 md:w-1/3">
           <Logo />

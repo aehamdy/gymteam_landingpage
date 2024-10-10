@@ -14,7 +14,6 @@ function Blog() {
           Pharetra enim sed neque dolor viverra.
         </p>
       </div>
-      {/* <div className="flex flex-col md:flex-row items-center mt-10"> */}
       <div className="grid grid-col-1 place-items-center md:grid-cols-2 lg:grid-cols-3">
         {blogs.map((blog, i) => (
           <article key={i} className="flex flex-col gap-4 w-fit">

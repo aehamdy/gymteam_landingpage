@@ -4,10 +4,10 @@ import SectionHeading from "./SectionHeading";
 
 function Reviews() {
   return (
-    <section className="my-section-spacing px-section-horizontal-padding overflow-hidden">
+    <section className="my-section-spacing px-section-horizontal-padding-sm md:px-section-horizontal-padding-md lg:px-section-horizontal-padding-lg overflow-hidden">
       <SectionHeading text="review from clients" />
-      <div className="w-full flex justify-end items-end h-[350px] py-4 px-5 bg-[url('./assets/reviews.jpg')] bg-cover bg-center bg-no-repeat rounded-3xl">
-        <div className="w-full md:w-1/2 py-4 px-2 rounded-xl bg-accent">
+      <div className="w-full flex justify-end items-end h-[350px] py-2 md:py-4 px-2 md:px-4 rounded-3xl bg-[url('./assets/reviews.jpg')] bg-cover bg-center bg-no-repeat">
+        <div className="w-full md:w-1/2 py-4 px-2 rounded-3xl bg-accent">
           {reviews.map((review, i) => (
             <article
               key={i}

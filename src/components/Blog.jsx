@@ -5,7 +5,7 @@ import SectionHeading from "./SectionHeading";
 
 function Blog() {
   return (
-    <section className="py-section-spacing px-4 bg-secondary-bg">
+    <section className="py-section-spacing px-section-horizontal-padding-sm md:px-section-horizontal-padding-md lg:px-section-horizontal-padding-lg bg-secondary-bg">
       <div className="px-section-horizontal-padding">
         <div className="mx-auto w-fit text-center">
           <SectionHeading text="blog & news" />
@@ -15,7 +15,7 @@ function Blog() {
             Pharetra enim sed neque dolor viverra.
           </p>
         </div>
-        <div className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 place-items-center gap-5">
+        <div className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 place-items-center gap-10 md:gap-5">
           {blogs.map((blog, i) => (
             <article key={i} className="flex flex-col gap-4 w-fit">
               <div className="rounded-xl overflow-hidden">

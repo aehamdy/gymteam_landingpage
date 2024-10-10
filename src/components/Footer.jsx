@@ -60,11 +60,11 @@ const icons = [facebookIcon, linkedinIcon, instagramIcon];
 
 function Footer() {
   return (
-    <footer className="py-section-spacing">
-      <div className="flex flex-col md:flex-row justify-between gap-8 px-section-horizontal-padding">
+    <footer className="py-section-spacing px-section-horizontal-padding-sm md:px-section-horizontal-padding-md lg:px-section-horizontal-padding-lg">
+      <div className="flex flex-col lg:flex-row justify-between gap-8 px-section-horizontal-padding">
         <div className="flex flex-col gap-8 md:w-1/3">
           <Logo />
-          <p className="md:w-3/4 text-secondary-paragraph">
+          <p className="lg:w-3/4 text-secondary-paragraph">
             Lorem Ipsum is simply dummy text for the printing and typsetting
           </p>
           <div className="flex gap-3">
@@ -79,13 +79,16 @@ function Footer() {
             ))}
           </div>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-16">
           {footerMenus.map((menu, i) => (
             <div key={i} className="">
               <h3 className="text-xl text-accent mb-3">{menu.heading}</h3>
               <ul className="flex flex-col gap-3">
                 {menu.list.map((item, i) => (
-                  <li key={i} className="w-fit text-lg hover:text-white">
+                  <li
+                    key={i}
+                    className="w-fit text-lg text-[#646464] hover:text-white duration-short"
+                  >
                     <a href="#">{item}</a>
                   </li>
                 ))}

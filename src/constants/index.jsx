@@ -75,7 +75,7 @@ export const plans = [
     yearly: "/yr",
     features: [
       "Lorem Ipsum is simply dummy text",
-      "Contrary to popular ballof. Lorem Ipsum is",
+      "Contrary to popular ballof. Lorem Ipsum",
       "Contrary to popular ballof. Lorem Ipsum",
       "Lorem Ipsum is simply dummy text",
     ],
@@ -88,7 +88,7 @@ export const plans = [
     yearly: "/yr",
     features: [
       "Lorem Ipsum is simply dummy text",
-      "Contrary to popular ballof. Lorem Ipsum is",
+      "Contrary to popular ballof. Lorem Ipsum",
       "Contrary to popular ballof. Lorem Ipsum",
       "Lorem Ipsum is simply dummy text",
     ],

@@ -20,14 +20,16 @@ function Plan({ i, plan, isToggled }) {
               : plan.yearly.toUpperCase()}
           </span>
         </div>
-        <p>{isToggled && `insted of ${plan.currency}${plan.price * 12}`}</p>
+        <p className="mt-2 font-orbitron uppercase text-accent">
+          {isToggled && `insted of ${plan.currency}${plan.price * 12}`}
+        </p>
       </div>
       <ul className="flex flex-col gap-5">
         {plan.features.map((feat, i) => (
           <div key={i}>
             <li className="flex items-center gap-3 text-secondary-paragraph">
               <CircleCheck />
-              <p className="">{feat}</p>
+              <p className="text-sm lg:text-md">{feat}</p>
             </li>
           </div>
         ))}

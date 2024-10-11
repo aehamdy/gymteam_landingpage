@@ -81,15 +81,15 @@ const ScheduleTable = () => {
 
   return (
     <section className=" py-section-spacing px-section-horizontal-padding-sm md:px-section-horizontal-padding-md lg:px-section-horizontal-padding-lg">
-      <table className="text-gray-300 border-collapse w-full">
+      <table className="text-gray-300 border-collapse text-center w-full">
         {/* <table className="text-gray-300 border-collapse border border-table-border-color w-full"> */}
         <thead>
           <tr>
-            <th className="border border-table-border-color px-4 py-2"></th>
+            <th className="px-4 py-2"></th>
             {days.map((day) => (
               <th
                 key={day}
-                className="border border-table-border-color px-4 py-2"
+                className="border border-table-border-color border-t-0 border-e-0 px-4 py-2"
               >
                 {day}
               </th>
@@ -99,7 +99,7 @@ const ScheduleTable = () => {
         <tbody>
           {times.map((time) => (
             <tr key={time}>
-              <td className="border border-table-border-color px-4 py-2">
+              <td className="border border-table-border-color border-s-0 px-4 py-2">
                 {time}
               </td>
               {days.map((day) => {
@@ -125,7 +125,7 @@ const ScheduleTable = () => {
                     <td
                       key={day + time}
                       rowSpan={classAtTime.duration}
-                      className="border border-table-border-color px-4 py-2"
+                      className="border border-table-border-color border-e-0 px-4 py-2"
                     >
                       {classAtTime.className}
                     </td>

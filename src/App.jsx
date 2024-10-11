@@ -16,7 +16,6 @@ function App() {
     <>
       <Header />
       <HeroSection />
-      {/* <div className="max-w-4xl mx-auto"> */}
       <Features />
       <About />
       <Coaches />
@@ -27,7 +26,6 @@ function App() {
       <NewsLetter />
       <Footer />
       <FooterBottomBar />
-      {/* </div> */}
     </>
   );
 }

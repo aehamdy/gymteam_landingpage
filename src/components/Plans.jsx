@@ -5,10 +5,10 @@ import PrimaryButton from "./PrimaryButton";
 
 function Plans() {
   return (
-    <section className="py-section-spacing px-section-horizontal-padding-sm md:px-section-horizontal-padding-md lg:px-section-horizontal-padding-lg">
+    <section className="flex flex-col items-center py-section-spacing px-section-horizontal-padding-sm md:px-section-horizontal-padding-md lg:px-section-horizontal-padding-lg">
       <SectionHeading text="our gym passes" />
       <div className="flex flex-col items-center border-b-2 border-b-[#252525] pb-12">
-        <div className="w-full flex flex-wrap md:flex-nowrap justify-center md:justify-between items-center gap-14 md:gap-0">
+        <div className="w-full flex flex-wrap md:flex-nowrap justify-center md:justify-between items-center gap-14 md:gap-24">
           {plans.map((plan, i) => (
             <article key={i} className="flex flex-col items-center gap-6">
               <h3 className="font-orbitron font-extrabold text-2xl tracking-wide uppercase">

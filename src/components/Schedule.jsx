@@ -1,3 +1,5 @@
+import PrimaryButton from "./PrimaryButton";
+
 const ScheduleTable = () => {
   const days = [
     "Saturday",
@@ -80,70 +82,72 @@ const ScheduleTable = () => {
   const spannedTimes = {};
 
   return (
-    <section className="table-section py-section-spacing px-section-horizontal-padding-sm md:px-section-horizontal-padding-md lg:px-section-horizontal-padding-lg overflow-x-auto">
-      <table className="min-w-full table-scrollbar text-gray-300 border-collapse text-center">
-        {/* <table className="text-gray-300 border-collapse border border-table-border-color w-full"> */}
-        <thead>
-          <tr>
-            <th className="px-4 py-2"></th>
-            {days.map((day) => (
-              <th
-                key={day}
-                className="border border-table-border-color border-t-0 border-e-0 px-4 py-2"
-              >
-                {day}
-              </th>
-            ))}
-          </tr>
-        </thead>
-        <tbody>
-          {times.map((time) => (
-            <tr key={time}>
-              <td className="border border-table-border-color border-s-0 px-4 py-2">
-                {time}
-              </td>
-              {days.map((day) => {
-                const daySchedule = schedule.find(
-                  (d) => d.day.toLowerCase() === day.toLowerCase()
-                ) || { classes: [] };
+    <section className="table-section flex flex-col items-center gap-4 py-section-spacing px-section-horizontal-padding-sm md:px-section-horizontal-padding-md lg:px-section-horizontal-padding-lg overflow-x-auto">
+      <div className="mb-8 overflow-x-auto">
+        <table className="min-w-full text-gray-300 border-collapse text-center">
+          <thead>
+            <tr>
+              <th className="px-4 py-2"></th>
+              {days.map((day) => (
+                <th
+                  key={day}
+                  className="border border-table-border-color border-t-0 border-e-0 px-4 py-2"
+                >
+                  {day}
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {times.map((time) => (
+              <tr key={time}>
+                <td className="border border-table-border-color border-s-0 px-4 py-2">
+                  {time}
+                </td>
+                {days.map((day) => {
+                  const daySchedule = schedule.find(
+                    (d) => d.day.toLowerCase() === day.toLowerCase()
+                  ) || { classes: [] };
 
-                const classAtTime = getClassAtTime(daySchedule, time);
+                  const classAtTime = getClassAtTime(daySchedule, time);
 
-                // Check if this time slot is already spanned by a previous row
-                if (spannedTimes[day + time]) {
-                  return null; // Skip this cell
-                }
-
-                if (classAtTime) {
-                  // Mark the next times as spanned based on the class duration
-                  for (let i = 1; i < classAtTime.duration; i++) {
-                    spannedTimes[day + times[times.indexOf(time) + i]] = true;
+                  // Check if this time slot is already spanned by a previous row
+                  if (spannedTimes[day + time]) {
+                    return null; // Skip this cell
                   }
 
-                  // Render the class cell with rowSpan
-                  return (
-                    <td
-                      key={day + time}
-                      rowSpan={classAtTime.duration}
-                      className="border border-table-border-color border-e-0 px-4 py-2"
-                    >
-                      {classAtTime.className}
-                    </td>
-                  );
-                } else {
-                  // Render an empty cell if no class is scheduled
-                  return (
-                    <td
-                      key={day + time}
-                      className="border border-table-border-color px-4 py-2"
-                    ></td>
-                  );
-                }
-              })}
-            </tr>
-          ))}
-        </tbody>
-      </table>
+                  if (classAtTime) {
+                    // Mark the next times as spanned based on the class duration
+                    for (let i = 1; i < classAtTime.duration; i++) {
+                      spannedTimes[day + times[times.indexOf(time) + i]] = true;
+                    }
+
+                    // Render the class cell with rowSpan
+                    return (
+                      <td
+                        key={day + time}
+                        rowSpan={classAtTime.duration}
+                        className="border border-table-border-color border-e-0 px-4 py-2"
+                      >
+                        {classAtTime.className}
+                      </td>
+                    );
+                  } else {
+                    // Render an empty cell if no class is scheduled
+                    return (
+                      <td
+                        key={day + time}
+                        className="border border-table-border-color px-4 py-2"
+                      ></td>
+                    );
+                  }
+                })}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <PrimaryButton text="view more" />
     </section>
   );
 };

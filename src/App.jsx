@@ -10,6 +10,7 @@ import HeroSection from "./components/HeroSection";
 import NewsLetter from "./components/NewsLetter";
 import Plans from "./components/Plans";
 import Reviews from "./components/Reviews";
+import Schedule from "./components/Schedule";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Features />
       <About />
       <Coaches />
+      <Schedule />
       <BackgroundSection />
       <Plans />
       <Reviews />

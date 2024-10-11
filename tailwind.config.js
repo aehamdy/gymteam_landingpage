@@ -28,6 +28,7 @@ module.exports = {
         'primary-bg': 'rgb(0, 0, 0)',
         'secondary-bg': 'rgb(36, 36, 36)',
         'toggle-bg': 'rgb(242, 201, 77)',
+        'table-border-color': '#171717',
       },
       boxShadow: {
         'button-shadow': '0 0 20px 2px rgba(214, 253, 0.3)',

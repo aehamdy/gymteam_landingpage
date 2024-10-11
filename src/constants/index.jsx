@@ -66,6 +66,13 @@ export const coaches = [
   },
 ];
 
+export const scheduleTable = [
+  {
+    days: ["saturday, sunday, monday, tuesday, wednesday, thursday, friday"],
+    timings: ["8", "9", "10", "11", "12", "1"],
+  },
+];
+
 export const plans = [
   {
     type: "crossfit",

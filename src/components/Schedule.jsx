@@ -80,8 +80,8 @@ const ScheduleTable = () => {
   const spannedTimes = {};
 
   return (
-    <section className=" py-section-spacing px-section-horizontal-padding-sm md:px-section-horizontal-padding-md lg:px-section-horizontal-padding-lg">
-      <table className="text-gray-300 border-collapse text-center w-full">
+    <section className="table-section py-section-spacing px-section-horizontal-padding-sm md:px-section-horizontal-padding-md lg:px-section-horizontal-padding-lg overflow-x-auto">
+      <table className="min-w-full table-scrollbar text-gray-300 border-collapse text-center">
         {/* <table className="text-gray-300 border-collapse border border-table-border-color w-full"> */}
         <thead>
           <tr>

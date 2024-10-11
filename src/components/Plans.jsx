@@ -16,6 +16,15 @@ function Plans() {
       <div className="flex flex-col items-center border-b-2 border-b-[#252525] pb-12">
         <div>
           <div className="flex flex-col items-center gap-6 text-slate-500">
+            <div className="flex gap-2">
+              <span className={`${isToggled ? "text-gray-400" : "text-white"}`}>
+                Monthly
+              </span>
+              <span>/</span>
+              <span className={`${isToggled ? "text-white" : "text-gray-400"}`}>
+                Yearly
+              </span>
+            </div>
             <button
               onClick={handleChange}
               className={`toggle-button ${isToggled ? "on" : "off"}`}

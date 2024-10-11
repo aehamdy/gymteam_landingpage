@@ -33,7 +33,7 @@ function Plans() {
         </div>
         <div className="w-full flex flex-wrap md:flex-nowrap justify-center md:justify-between items-center gap-14 md:gap-24">
           {plans.map((plan, i) => (
-            <Plan key={i} plan={plan} />
+            <Plan key={i} plan={plan} isToggled={isToggled} />
           ))}
         </div>
       </div>

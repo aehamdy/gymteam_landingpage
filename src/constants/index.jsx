@@ -72,7 +72,7 @@ export const plans = [
     price: "120",
     currency: "$",
     monthly: "/mo",
-    yearly: "/anually",
+    yearly: "/yr",
     features: [
       "Lorem Ipsum is simply dummy text",
       "Contrary to popular ballof. Lorem Ipsum is",
@@ -85,7 +85,7 @@ export const plans = [
     price: "109",
     currency: "$",
     monthly: "/mo",
-    yearly: "/anually",
+    yearly: "/yr",
     features: [
       "Lorem Ipsum is simply dummy text",
       "Contrary to popular ballof. Lorem Ipsum is",

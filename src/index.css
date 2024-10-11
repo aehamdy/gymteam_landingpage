@@ -35,3 +35,32 @@
   z-index: -1;
   border-radius: 8px;
 } */
+
+.toggle-button {
+  position: relative;
+  width: 58px;
+  height: 26px;
+  font-size: 16px;
+  background-color: rgb(242, 201, 77);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.toggle-button::before {
+  content: "";
+  transition: 0.3s;
+  position: absolute;
+  width: 25px;
+  height: calc(100% - 2px);
+  background-color: black;
+  border-radius: 50%;
+  left: 1px;
+  transform: translateY(-50%);
+}
+
+.toggle-button.on::before {
+  left: 100%;
+  transform: translateY(-50%) translateX(-103%);
+}

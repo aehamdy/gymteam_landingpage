@@ -12,10 +12,7 @@ function Coaches() {
       </p>
       <div className="grid grid-col-1 place-items-center md:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-10 lg:gap-16">
         {coaches.map((coach, i) => (
-          <article
-            key={i}
-            className="flex flex-col gap-2 w-[300px] md:w-[200px]"
-          >
+          <article key={i} className="flex flex-col gap-2 w-[200px]">
             <div className="rounded-xl overflow-hidden">
               <img
                 src={coach.img}

@@ -4,7 +4,7 @@ import SectionHeading from "./SectionHeading";
 function NewsLetter() {
   return (
     <section
-      className="relative w-full h-[500px] py-section-spacing bg-cover bg-center bg-no-repeat before:absolute before:content[''] before:top-0 before:start-0 before:w-full before:h-full before:bg-black/[0.7]"
+      className="relative w-full h-[500px] py-section-spacing bg-cover bg-fixed bg-center bg-no-repeat before:absolute before:content[''] before:top-0 before:start-0 before:w-full before:h-full before:bg-black/[0.7]"
       style={{ backgroundImage: `url(${newsLetterImg})` }}
     >
       <div className="px-section-horizontal-padding absolute flex flex-col justify-center items-center gap-8 w-full h-full mx-auto">

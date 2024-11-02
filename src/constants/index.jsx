@@ -3,15 +3,16 @@ import { Zap } from "lucide-react";
 import feature1 from "../assets/features-1.png";
 import feature2 from "../assets/features-2.png";
 import feature3 from "../assets/features-3.png";
-import about1 from "../assets/about-1.webp";
-import about2 from "../assets/about-2.webp";
-import coach1 from "../assets/coach-1.webp";
-import coach2 from "../assets/coach-2.webp";
-import coach3 from "../assets/coach-3.webp";
-import coach4 from "../assets/coach-4.webp";
-import blog1 from "../assets/blogs-1.webp";
-import blog2 from "../assets/blogs-2.webp";
-import blog3 from "../assets/blogs-3.webp";
+import about1 from "../assets/about-1.jpg";
+import about2 from "../assets/about-2.jpg";
+import coach1 from "../assets/coach-1.jpg";
+import coach2 from "../assets/coach-2.jpg";
+import coach3 from "../assets/coach-3.jpg";
+import coach4 from "../assets/coach-4.jpg";
+import blog1 from "../assets/blogs-1.jpg";
+import blog2 from "../assets/blogs-2.jpg";
+import blog3 from "../assets/blogs-3.jpg";
+// import newsletterImg from "../assets/news-letter.webp";
 
 export const navItems = [
   { label: "Home", href: "#" },

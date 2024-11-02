@@ -1,4 +1,4 @@
-import newsLetterImg from "../assets/news-letter.webp";
+import newsLetterImg from "../assets/news-letter.jpg";
 import SectionHeading from "./SectionHeading";
 
 function NewsLetter() {

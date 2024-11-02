@@ -1,4 +1,4 @@
-import about from "../assets/about.webp";
+import about from "../assets/about.jpg";
 import { aboutImages } from "../constants";
 import SectionHeading from "./SectionHeading";
 

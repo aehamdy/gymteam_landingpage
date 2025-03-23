@@ -4,6 +4,7 @@ import SectionHeading from "./SectionHeading";
 function NewsLetter() {
   return (
     <section
+      id="contact"
       className="relative w-full h-[500px] py-section-spacing bg-cover bg-fixed bg-center bg-no-repeat before:absolute before:content[''] before:top-0 before:start-0 before:w-full before:h-full before:bg-black/[0.7]"
       style={{ backgroundImage: `url(${newsLetterImg})` }}
     >

@@ -5,7 +5,10 @@ import SectionHeading from "./SectionHeading";
 
 function Blog() {
   return (
-    <section className="py-section-spacing px-section-horizontal-padding-sm md:px-section-horizontal-padding-md lg:px-section-horizontal-padding-lg bg-secondary-bg">
+    <section
+      id="blog"
+      className="py-section-spacing px-section-horizontal-padding-sm md:px-section-horizontal-padding-md lg:px-section-horizontal-padding-lg bg-secondary-bg"
+    >
       <div className="px-section-horizontal-padding">
         <div className="mx-auto w-fit text-center">
           <SectionHeading text="blog & news" />

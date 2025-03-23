@@ -4,7 +4,10 @@ import SectionHeading from "./SectionHeading";
 
 function Features() {
   return (
-    <section className="py-section-spacing px-section-horizontal-padding-sm md:px-section-horizontal-padding-md lg:px-section-horizontal-padding-lg">
+    <section
+      id="features"
+      className="py-section-spacing px-section-horizontal-padding-sm md:px-section-horizontal-padding-md lg:px-section-horizontal-padding-lg"
+    >
       <SectionHeading text="Why choose us" />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         {features.map((feature, i) => (

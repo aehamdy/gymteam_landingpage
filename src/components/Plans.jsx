@@ -12,7 +12,10 @@ function Plans() {
   };
 
   return (
-    <section className="flex flex-col items-center py-section-spacing px-section-horizontal-padding-sm md:px-section-horizontal-padding-md lg:px-section-horizontal-padding-lg">
+    <section
+      id="shop"
+      className="flex flex-col items-center py-section-spacing px-section-horizontal-padding-sm md:px-section-horizontal-padding-md lg:px-section-horizontal-padding-lg"
+    >
       <SectionHeading text="our gym passes" />
       <div className="flex flex-col items-center gap-6 border-b-2 border-b-[#252525] pb-12">
         <div className="flex flex-col items-center gap-6 text-slate-500">

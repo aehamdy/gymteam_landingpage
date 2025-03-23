@@ -18,6 +18,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @layer utilities {
   .table-section::-webkit-scrollbar {
     height: 6px;

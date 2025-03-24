@@ -1,7 +1,20 @@
+import { useRef } from "react";
 import { coaches } from "../constants";
 import SectionHeading from "./SectionHeading";
 
 function Coaches() {
+  const containerRef = useRef(null);
+
+  const scroll = (direction) => {
+    if (containerRef.current) {
+      const scrollAmount = 300;
+      containerRef.current.scrollBy({
+        left: direction === "next" ? scrollAmount : -scrollAmount,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <section className="py-section-spacing px-section-horizontal-padding-sm md:px-section-horizontal-padding-md lg:px-section-horizontal-padding-lg bg-secondary-bg">
       <SectionHeading text="our best coaches" />
@@ -11,8 +24,25 @@ function Coaches() {
         Pharetra enim sed neque dolor viverra.
       </p>
 
-      <div className="flex items-center gap-4 snap-x lg:snap-none snap-mandatory lg:snap-mandatory overflow-x-scroll overflow-y-hidden lg:overflow-x-visible scrollbar-hide">
-        {/* <div className="grid grid-col-1 place-items-center md:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-10 lg:gap-4"> */}
+      <div className="lg:hidden flex justify-between items-center w-full">
+        <button
+          onClick={() => scroll("prev")}
+          className="flex py-1 px-2 text-black hover:text-accent bg-accent hover:bg-black rounded-md duration-150"
+        >
+          &#x23F4;
+        </button>
+        <button
+          onClick={() => scroll("next")}
+          className="flex py-1 px-2 text-black hover:text-accent bg-accent hover:bg-black rounded-md duration-150"
+        >
+          &#x23F5;
+        </button>
+      </div>
+
+      <div
+        ref={containerRef}
+        className="relative flex items-center gap-4 mt-3 snap-x lg:snap-none snap-mandatory lg:snap-mandatory overflow-x-scroll overflow-y-hidden lg:overflow-x-visible scrollbar-hide"
+      >
         {coaches.map((coach, i) => (
           <article
             key={i}

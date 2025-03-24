@@ -18,13 +18,15 @@ function Nav({ isExpanded }) {
         ))}
       </ul>
       {isExpanded && (
-        <ul className="lg:hidden flex flex-col items-center absolute w-full left-0 top-[100%] text-secondary-paragraph rounded-lg text-center animate-fadeInDown">
+        <ul className="lg:hidden flex flex-col items-center absolute w-full start-0 top-full text-secondary-paragraph rounded-lg text-center animate-fadeInDown">
           {navItems.map((item, i) => (
-            <li
-              key={i}
-              className="w-full py-3 font-medium hover:text-primary-bg bg-secondary-bg hover:bg-accent cursor-pointer duration-short"
-            >
-              <a href={item.href}>{item.label}</a>
+            <li key={i} className="w-full flex">
+              <a
+                href={item.href}
+                className="w-full py-3 font-medium hover:text-primary-bg bg-secondary-bg hover:bg-accent cursor-pointer duration-short"
+              >
+                {item.label}
+              </a>
             </li>
           ))}
         </ul>
